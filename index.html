@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Korean Marine Collagen Peptides — CRO prototype (concept)</title>
+  <meta name="description" content="Concept prototype of an improved product page for Korean Marine Collagen Peptides, built for an IIT Mandi CRO case study. Not affiliated with Wellbeing Nutrition. No real orders are placed.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to product</a>
+
+  <!-- Prototype disclosure: keeps the simulated nature of the page explicit -->
+  <div class="proto-bar" role="note">
+    <p><strong>Concept prototype</strong><span class="proto-long"> for an IIT Mandi case study. Not affiliated with Wellbeing Nutrition.</span> Cart and checkout are simulated, so no order is placed.</p>
+    <button type="button" class="proto-toggle" id="annoToggle" aria-pressed="false">Show CRO rationale</button>
+  </div>
+
+  <div class="promo-bar">
+    <p>Free delivery on orders above ₹499 · Extra 5% off when you pay online</p>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#main" aria-label="Wellbeing Nutrition (prototype home)">
+        <span class="wm-top">Wellbeing</span><span class="wm-bottom">Nutrition</span>
+      </a>
+      <nav class="header-nav" aria-label="Primary">
+        <a href="#evidence">Evidence</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button type="button" class="cart-button" id="cartOpen" aria-haspopup="dialog" aria-controls="cartDrawer">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path d="M3 4h2l2.4 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 1.9-1.5L21 8H6.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.4" fill="currentColor"/><circle cx="17" cy="20" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-label">Cart</span>
+        <span class="cart-count" id="cartCount" aria-label="0 items in cart">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <nav class="wrap breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="#main">Home</a></li>
+        <li><a href="#main">Collagen</a></li>
+        <li aria-current="page">Korean Marine Collagen Peptides</li>
+      </ol>
+    </nav>
+
+    <!-- ===================== BUY BOX ===================== -->
+    <section class="wrap pdp" aria-labelledby="productTitle">
+      <!-- Title block: first in DOM so it leads on mobile -->
+      <div class="pdp-head">
+        <h1 id="productTitle">Korean Marine Collagen Peptides <span class="title-variant">Unflavoured · 200 g</span></h1>
+        <p class="subtitle">8 g hydrolysed Type I &amp; III collagen per scoop · 25 servings per jar</p>
+        <a class="rating-link" href="#reviews">
+          <span class="stars" aria-hidden="true"><span style="width:94.8%"></span></span>
+          <span><strong>4.74</strong> out of 5 · 571 ratings</span>
+          <span class="rating-cta">Read reviews with text</span>
+        </a>
+      </div>
+
+      <!-- Gallery -->
+      <div class="gallery" aria-label="Product images">
+        <div class="gallery-main">
+          <img id="mainImage" src="assets/jar-front.jpg" width="900" height="900" alt="Korean Marine Collagen Peptides jar, unflavoured, 200 g, front of pack">
+        </div>
+        <div class="thumbs" role="group" aria-label="Choose image">
+          <button type="button" class="thumb is-active" aria-pressed="true" data-src="assets/jar-front.jpg" data-alt="Jar, front of pack"><img src="assets/jar-front-thumb.jpg" width="160" height="160" alt="" loading="lazy"><span class="sr-only">Front of pack</span></button>
+          <button type="button" class="thumb" aria-pressed="false" data-src="assets/label-back.jpg" data-alt="Back label with usage directions, allergen information and caution"><img src="assets/label-back-thumb.jpg" width="160" height="160" alt="" loading="lazy"><span class="sr-only">Back label</span></button>
+          <button type="button" class="thumb" aria-pressed="false" data-src="assets/how-to-use.jpg" data-alt="How to use: one 8 g scoop in 250 ml of water, coffee, juice or a smoothie"><img src="assets/how-to-use-thumb.jpg" width="160" height="160" alt="" loading="lazy"><span class="sr-only">How to use</span></button>
+          <button type="button" class="thumb" aria-pressed="false" data-src="assets/nutrition.jpg" data-alt="Nutritional information per 8 g serving"><img src="assets/nutrition-thumb.jpg" width="160" height="160" alt="" loading="lazy"><span class="sr-only">Nutrition facts</span></button>
+          <button type="button" class="thumb" aria-pressed="false" data-src="assets/advantage.jpg" data-alt="Quality claims graphic: mercury free, heavy metal tested, third-party tested"><img src="assets/advantage-thumb.jpg" width="160" height="160" alt="" loading="lazy"><span class="sr-only">Quality</span></button>
+        </div>
+      </div>
+
+      <!-- Purchase panel -->
+      <div class="buy">
+        <div class="anno" hidden><b>I3</b> Focused mobile buy box, which addresses F3 and F2. On mobile, price and plan sit inside the first screen-and-a-half, the CTA is a filled primary button, and pop-up overlays are held back until after the buy box.</div>
+
+        <ul class="fact-chips" aria-label="Key facts">
+          <li>8 g collagen per scoop</li>
+          <li>Mixes into any drink</li>
+          <li>Batch lab-tested</li>
+        </ul>
+
+        <div class="price-block" aria-live="polite">
+          <p class="price"><span class="sr-only">Price: </span><span id="price">₹1,439</span>
+            <span class="mrp"><span class="sr-only">MRP </span><s id="mrp">₹1,799</s></span>
+            <span class="off">20% off</span></p>
+          <p class="per-serving">₹57.6 per serving · MRP inclusive of all taxes</p>
+          <p class="member-line">Members pay ₹1,367 per jar. <a href="#main" class="text-link" data-sim="Membership sign-up is outside this prototype.">Join</a></p>
+        </div>
+
+        <!-- I1: Plan selector -->
+        <fieldset class="plans" id="plans">
+          <div class="anno" hidden><b>I1</b> Plan selector, which addresses F2 (“How much do I need?”). Each card shows jars, servings, days of supply and price per serving against the label's own guidance. The default stays at 1 jar, and the separate quantity stepper is removed because quantity can still be changed in the cart.</div>
+          <legend>
+            <span class="legend-title">How much do you need?</span>
+            <span class="legend-help">Label guidance: 1 scoop daily for <strong>at least 3–4 months</strong>. Each jar lasts 25 days.</span>
+          </legend>
+
+          <div class="plan-grid">
+            <label class="plan">
+              <input type="radio" name="plan" value="1" checked>
+              <span class="plan-body">
+                <span class="plan-top"><span class="plan-name">1 jar</span><span class="plan-tag">Try it</span></span>
+                <span class="plan-days">25 days</span>
+                <span class="plan-meter" aria-hidden="true"><span style="width:20.8%"></span></span>
+                <span class="plan-price">₹1,439</span>
+                <span class="plan-unit">₹57.6 / serving</span>
+              </span>
+            </label>
+            <label class="plan">
+              <input type="radio" name="plan" value="2">
+              <span class="plan-body">
+                <span class="plan-top"><span class="plan-name">2 jars</span></span>
+                <span class="plan-days">50 days</span>
+                <span class="plan-meter" aria-hidden="true"><span style="width:41.7%"></span></span>
+                <span class="plan-price">₹2,878</span>
+                <span class="plan-unit">₹57.6 / serving</span>
+              </span>
+            </label>
+            <label class="plan">
+              <input type="radio" name="plan" value="3">
+              <span class="plan-body">
+                <span class="plan-top"><span class="plan-name">3 jars</span></span>
+                <span class="plan-days">75 days</span>
+                <span class="plan-meter" aria-hidden="true"><span style="width:62.5%"></span></span>
+                <span class="plan-price">₹4,318</span>
+                <span class="plan-unit">₹57.6 / serving</span>
+              </span>
+            </label>
+            <label class="plan">
+              <input type="radio" name="plan" value="4">
+              <span class="plan-body">
+                <span class="plan-top"><span class="plan-name">4 jars</span><span class="plan-tag plan-tag--course">3+ months</span></span>
+                <span class="plan-days">100 days</span>
+                <span class="plan-meter" aria-hidden="true"><span style="width:83.3%"></span></span>
+                <span class="plan-price">₹5,757</span>
+                <span class="plan-unit">₹57.6 / serving</span>
+              </span>
+            </label>
+          </div>
+          <p class="plan-note" id="planNote">1 jar covers about 3½ weeks. That's enough to try it, but short of the 3–4 months on the label.</p>
+          <p class="plan-fine">Every plan costs the same per serving, so choose by how long you plan to take it. Bars show days of supply out of 120 days (4 months). The tick marks 3 months.</p>
+        </fieldset>
+
+        <p class="availability"><span class="dot" aria-hidden="true"></span> In stock · usually dispatched within 2 business days</p>
+        <div class="anno anno--inline" hidden><b>Fix</b> Real stock status, which addresses F1 and ships before the tests. The live page shows a randomly generated count between 20 and 50 (from wbn-pdp.js). This version shows only real stock status.</div>
+
+        <div class="cta-row" id="ctaRow">
+          <button type="button" class="btn btn-primary" id="addToCart">
+            Add to cart · <span id="ctaPrice">₹1,439</span>
+          </button>
+        </div>
+
+        <!-- I2: Purchase assurance & suitability -->
+        <section class="assurance" aria-labelledby="assuranceTitle">
+          <div class="anno" hidden><b>I2</b> Assurance panel (delivery, returns and suitability), which addresses F3 (“What happens after I pay?”). Delivery, payment, returns and who it is not for, written from the published policies and the back label and placed directly under the CTA.</div>
+          <h2 id="assuranceTitle" class="sr-only">Delivery, payment and returns</h2>
+
+          <form class="pincode" id="pincodeForm" novalidate>
+            <label for="pincode">Check delivery date</label>
+            <div class="pincode-row">
+              <input id="pincode" name="pincode" inputmode="numeric" autocomplete="postal-code" maxlength="6" placeholder="6-digit pincode" aria-describedby="pincodeHelp pincodeResult">
+              <button type="submit" class="btn btn-secondary">Check</button>
+            </div>
+            <p id="pincodeHelp" class="field-help">Demo estimate from the published 5–8 day delivery policy. The live build would use the courier's pincode estimate.</p>
+            <p id="pincodeResult" class="pincode-result" aria-live="polite"></p>
+          </form>
+
+          <ul class="assure-list">
+            <li>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="7" cy="17.5" r="1.6" fill="currentColor"/><circle cx="17" cy="17.5" r="1.6" fill="currentColor"/></svg>
+              <div><strong>Free delivery on this order</strong><span>Orders above ₹499 ship free. Usually dispatched within 2 business days.</span></div>
+            </li>
+            <li>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.7"/></svg>
+              <div><strong>Pay online or cash on delivery</strong><span>Extra 5% off when you pay online, applied at checkout. Cash on delivery depends on your pincode.</span></div>
+            </li>
+            <li>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.3-5.6M4 4v4h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div><strong>Returns: sealed product</strong><span>Damaged, defective or wrong item? Email photos within 48 hours of delivery for a replacement or refund. <button type="button" class="text-link" id="policyOpen">Full policy</button></span></div>
+            </li>
+          </ul>
+
+          <div class="suitability">
+            <p class="suit-title">Before you buy</p>
+            <ul class="suit-chips">
+              <li>Contains fish (marine source)</li>
+              <li>Non-vegetarian</li>
+              <li>Not for pregnant or breastfeeding women</li>
+              <li>Adults only</li>
+            </ul>
+            <button type="button" class="text-link" id="labelOpen">See the full label</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- ===================== EVIDENCE (I5) ===================== -->
+    <section class="band" id="evidence" aria-labelledby="evidenceTitle">
+      <div class="wrap">
+        <div class="anno" hidden><b>I5</b> One consistent evidence section, which addresses F1 (“Can I believe it?”). Product-specific proof (batch lab reports) comes first, and ingredient-level research is described honestly with its limits. The live page states time-to-results five different ways (4 weeks, from 4 weeks, 4–8 weeks, 12 weeks, 3–4 months).</div>
+        <h2 id="evidenceTitle">What the evidence says</h2>
+        <p class="section-lede">Two kinds of proof, kept separate so you can judge each one.</p>
+
+        <div class="evidence-grid">
+          <article class="ev-card">
+            <p class="ev-kicker">Tested on this product</p>
+            <h3>Batch lab reports</h3>
+            <table class="ev-table">
+              <caption class="sr-only">Heavy-metal results for batch 3SWBMC1-038</caption>
+              <thead><tr><th scope="col">Test</th><th scope="col">Result</th><th scope="col">Limit</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Mercury</th><td>&lt;0.5 mg/kg</td><td>1.0</td></tr>
+                <tr><th scope="row">Methyl mercury</th><td>&lt;0.1 mg/kg</td><td>0.25</td></tr>
+                <tr><th scope="row">Lead</th><td>&lt;0.5 mg/kg</td><td>2.5</td></tr>
+                <tr><th scope="row">Arsenic</th><td>&lt;0.5 mg/kg</td><td>1.1</td></tr>
+                <tr><th scope="row">Salmonella, E. coli</th><td>Absent</td><td>Absent</td></tr>
+              </tbody>
+            </table>
+            <p class="ev-meta">Batch 3SWBMC1-038 · manufactured Jul 2025 · reports issued Aug–Sep 2025 by an NABL-scope laboratory.</p>
+            <p class="ev-links">
+              <a href="https://cdn.shopify.com/s/files/1/0240/2942/9840/files/heavy_metals_5520bdb9-98d1-4edd-95c8-f6a57fcd31b8.pdf?v=1758271466" target="_blank" rel="noopener">Heavy metals (PDF)</a>
+              <a href="https://cdn.shopify.com/s/files/1/0240/2942/9840/files/MICROBIAL_f42200c9-8dd6-40ca-be2a-dc1e1758b5a2.pdf?v=1758271466" target="_blank" rel="noopener">Microbial (PDF)</a>
+              <a href="https://cdn.shopify.com/s/files/1/0240/2942/9840/files/Contaminants_Residue_e0f5be85-7bfc-428f-9f5b-5eccc660366f.pdf?v=1758271466" target="_blank" rel="noopener">Contaminants (PDF)</a>
+            </p>
+          </article>
+
+          <article class="ev-card">
+            <p class="ev-kicker">Studied as an ingredient, not this exact product</p>
+            <h3>Hydrolysed collagen peptides</h3>
+            <p>In randomised, placebo-controlled trials, hydrolysed collagen peptides were taken daily for <strong>8–12 weeks</strong>. Pooled analyses report better skin hydration and elasticity than placebo. Higher-quality and independently funded trials show smaller or no effects, so results vary from person to person.</p>
+            <details class="ev-studies">
+              <summary>Studies referenced on this page (4)</summary>
+              <ul>
+                <li><strong>Kim et al., J Med Food, 2022.</strong> Low-molecular-weight collagen peptides; 100 adults randomised, 12 weeks; wrinkles, elasticity and hydration improved versus placebo.</li>
+                <li><strong>Evans et al., J Cosmet Dermatol, 2021.</strong> Fish collagen from another supplier, 10 g/day, women 45–60, 12 weeks; wrinkle score 35% lower than baseline.</li>
+                <li><strong>Demir-Dora et al., J Clin Med, 2024.</strong> A branded collagen peptide, 10 g/day, 112 women, 8 weeks; elasticity, hydration and roughness improved versus placebo.</li>
+                <li><strong>Bianchi et al., J Clin Aesthet Dermatol, 2022.</strong> Hydrolysed collagen, 52 adults, 56 days; moisturisation, elasticity and wrinkle depth improved versus control.</li>
+              </ul>
+            </details>
+            <p class="ev-when"><strong>When to expect results:</strong> the label recommends 1 scoop daily for at least 3–4 months.</p>
+            <p class="ev-draft">Proposed copy for the case study. It would need regulatory, R&amp;D and brand approval before use.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== REVIEWS (I4) ===================== -->
+    <section class="wrap reviews" id="reviews" aria-labelledby="reviewsTitle">
+      <div class="anno" hidden><b>I4</b> Reviews with text first, which address F1. Reviews with text show by default, critical reviews are one tap away, and themes are summarised. On the live page, 15 of the 30 most recent reviews have no text, and 5 of the 6 written reviews that describe a problem carry 5 stars.</div>
+      <h2 id="reviewsTitle">Customer reviews</h2>
+      <div class="rev-top">
+        <div class="rev-summary">
+          <p class="rev-score">4.74<span>/5</span></p>
+          <p class="rev-count">571 ratings</p>
+          <dl class="dist" aria-label="Rating distribution">
+            <div><dt>5★</dt><dd><span class="bar"><span style="width:74.3%"></span></span><span class="n">424</span></dd></div>
+            <div><dt>4★</dt><dd><span class="bar"><span style="width:25.6%"></span></span><span class="n">146</span></dd></div>
+            <div><dt>3★</dt><dd><span class="bar"><span style="width:0.4%"></span></span><span class="n">1</span></dd></div>
+            <div><dt>2★</dt><dd><span class="bar"><span style="width:0%"></span></span><span class="n">0</span></dd></div>
+            <div><dt>1★</dt><dd><span class="bar"><span style="width:0%"></span></span><span class="n">0</span></dd></div>
+          </dl>
+        </div>
+        <div class="themes">
+          <h3>What recent reviewers mention</h3>
+          <ul>
+            <li><span class="theme-name">Results</span><span class="theme-detail">5 mentions: 3 positive, 2 saw little or no change</span></li>
+            <li><span class="theme-name">Delivery</span><span class="theme-detail">4 mentions: 1 positive, 3 delayed or not received</span></li>
+            <li><span class="theme-name">Taste &amp; smell</span><span class="theme-detail">2 mentions: 1 no fishy taste, 1 fishy smell</span></li>
+          </ul>
+          <p class="fine">Based on the 30 most recent reviews on the live page (sampled 21 Oct 2026). In production this would be computed across all reviews.</p>
+        </div>
+      </div>
+
+      <div class="rev-filters" role="group" aria-label="Filter reviews">
+        <button type="button" class="chip is-on" data-filter="text" aria-pressed="true">With text</button>
+        <button type="button" class="chip" data-filter="critical" aria-pressed="false">Critical (1–3★ or problem reported)</button>
+        <button type="button" class="chip" data-filter="results" aria-pressed="false">Mentions results</button>
+        <button type="button" class="chip" data-filter="delivery" aria-pressed="false">Mentions delivery</button>
+        <button type="button" class="chip" data-filter="taste" aria-pressed="false">Mentions taste</button>
+        <button type="button" class="chip" data-filter="all" aria-pressed="false">All 30 (incl. no text)</button>
+      </div>
+      <p class="rev-status" id="revStatus" aria-live="polite"></p>
+      <ul class="rev-list" id="revList"></ul>
+    </section>
+
+    <!-- ===================== FAQ (stacked, not tabs) ===================== -->
+    <section class="band band--plain" id="faq" aria-labelledby="faqTitle">
+      <div class="wrap narrow">
+        <div class="anno" hidden><b>I3</b> Stacked accordions replace the live page's horizontal tabs. Those tabs behave three different ways: they switch content, scroll the page or open a pop-up. Answers here match the label and the published policies.</div>
+        <h2 id="faqTitle">Questions people ask before buying</h2>
+        <div class="accordion">
+          <h3><button type="button" aria-expanded="false" aria-controls="faq1" id="faq1b">How much should I take, and for how long?</button></h3>
+          <div id="faq1" role="region" aria-labelledby="faq1b" hidden><p>One level scoop (about 8 g) a day in 250 ml of water, coffee, juice or a smoothie. The label recommends taking it daily for at least 3–4 months. One jar holds 25 servings.</p></div>
+
+          <h3><button type="button" aria-expanded="false" aria-controls="faq2" id="faq2b">When might I notice a difference?</button></h3>
+          <div id="faq2" role="region" aria-labelledby="faq2b" hidden><p>Clinical studies of collagen peptides measured changes after 8–12 weeks of daily use, and results vary between people. The label recommends at least 3–4 months.</p></div>
+
+          <h3><button type="button" aria-expanded="false" aria-controls="faq3" id="faq3b">Does it taste or smell fishy?</button></h3>
+          <div id="faq3" role="region" aria-labelledby="faq3b" hidden><p>It is unflavoured and designed to dissolve clear in water. Most reviewers who mention taste report none, though one recent reviewer reported a fishy smell. Mixing it into coffee or a smoothie masks any taste.</p></div>
+
+          <h3><button type="button" aria-expanded="false" aria-controls="faq4" id="faq4b">Is it suitable for me?</button></h3>
+          <div id="faq4" role="region" aria-labelledby="faq4b" hidden><p>It contains fish derivatives and is made in a facility that also processes milk, nuts and soy. It is not intended for pregnant or breastfeeding women, for anyone undergoing medical treatment, or for children. It is non-vegetarian. If you have a condition or take medication, ask your doctor first.</p></div>
+
+          <h3><button type="button" aria-expanded="false" aria-controls="faq5" id="faq5b">Can I mix it into hot drinks?</button></h3>
+          <div id="faq5" role="region" aria-labelledby="faq5b" hidden><p>Yes. The brand says it blends into coffee, tea, smoothies and juices.</p></div>
+
+          <h3><button type="button" aria-expanded="false" aria-controls="faq6" id="faq6b">When will it arrive, and can I return it?</button></h3>
+          <div id="faq6" role="region" aria-labelledby="faq6b" hidden><p>Most orders are dispatched within 2 business days, and delivery takes 5–8 days from order confirmation. Orders above ₹499 ship free. Because it is a sealed consumable, returns are accepted only for damaged, defective or incorrect items reported within 48 hours of delivery. Online payments are refunded within 7 working days, and cash-on-delivery orders within 14.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DETAILS ===================== -->
+    <section class="wrap narrow details" aria-labelledby="detailsTitle">
+      <h2 id="detailsTitle">Product details</h2>
+      <details>
+        <summary>Ingredients and nutrition (per 8 g scoop)</summary>
+        <p>Ingredient: 100% Korean marine collagen peptides (hydrolysed, from wild-caught deep-sea fish).</p>
+        <table class="nutri">
+          <caption class="sr-only">Nutrition per 8 g serving</caption>
+          <tbody>
+            <tr><th scope="row">Energy</th><td>31.6 kcal</td></tr>
+            <tr><th scope="row">Protein</th><td>7.9 g</td></tr>
+            <tr><th scope="row">Carbohydrate</th><td>0 g</td></tr>
+            <tr><th scope="row">Total / added sugars</th><td>0 g / 0 g</td></tr>
+            <tr><th scope="row">Fat</th><td>0 g</td></tr>
+            <tr><th scope="row">Sodium</th><td>27 mg</td></tr>
+          </tbody>
+        </table>
+      </details>
+      <details>
+        <summary>Manufacturing and legal information</summary>
+        <p>Net weight 200 g · Shelf life 24 months · Country of origin: India (collagen sourced from Korean deep-sea fish) · Marketed by Nutritionalab Pvt. Ltd., Mumbai · FSSAI Lic. No. 10019022009134.</p>
+      </details>
+    </section>
+
+    <!-- Deferred lead capture (I3): kept, but no longer overlays the decision zone -->
+    <section class="wrap newsletter" aria-labelledby="nlTitle">
+      <div class="anno" hidden><b>I3</b> Lead capture is kept but moved inline, after the decision zone. The live page shows a persistent "Get 10% OFF" tab, chat-suggestion bubbles and a video widget over the buy box. Track lead-capture rate as a guardrail.</div>
+      <h2 id="nlTitle">Want wellness tips and offers?</h2>
+      <form class="nl-form" id="nlForm" novalidate>
+        <label for="nlEmail" class="sr-only">Email address</label>
+        <input id="nlEmail" type="email" placeholder="Email address" autocomplete="email">
+        <button type="submit" class="btn btn-secondary">Subscribe</button>
+      </form>
+      <p class="fine" id="nlResult" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Concept prototype by Aryan Pathak (IM25018) and Hardik Agarwal (IM25027), IIT Mandi. Built for a product-management case on conversion rate optimisation. Product facts, prices, policies and reviews were observed on wellbeingnutrition.com on 21 Oct 2026 and may have changed. Product images belong to Wellbeing Nutrition and are used here for academic illustration only.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky purchase bar -->
+  <div class="sticky-bar" id="stickyBar" aria-hidden="true">
+    <div class="wrap sticky-inner">
+      <div class="sticky-info">
+        <span class="sticky-plan" id="stickyPlan">1 jar · 25 days</span>
+        <span class="sticky-price" id="stickyPrice">₹1,439</span>
+      </div>
+      <button type="button" class="btn btn-primary" id="stickyAdd" tabindex="-1">Add to cart</button>
+    </div>
+  </div>
+
+  <!-- Cart drawer (simulated) -->
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" hidden>
+    <div class="drawer-head">
+      <h2 id="cartTitle">Your cart</h2>
+      <button type="button" class="icon-btn" id="cartClose" aria-label="Close cart">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="drawer-body" id="cartBody"></div>
+    <div class="drawer-foot" id="cartFoot"></div>
+  </aside>
+
+  <!-- Simple modal for label / policy -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-card">
+      <div class="drawer-head">
+        <h2 id="modalTitle">Label</h2>
+        <button type="button" class="icon-btn" id="modalClose" aria-label="Close">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
